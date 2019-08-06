@@ -31,8 +31,9 @@ if (projCards.length > 0) {
 let featured = document.getElementsByClassName("featured");
 
 if (featured.length > 0) {
-    featured[0].addEventListener("click", viewEdDining);
-    featured[1].addEventListener("click", viewAndrePortfolio);
+    featured[0].addEventListener("click", viewGMPower);
+    featured[1].addEventListener("click", viewEdDining);
+    featured[2].addEventListener("click", viewAndrePortfolio);
     
     for (let feature of featured) {
         feature.addEventListener("click", openModal);
