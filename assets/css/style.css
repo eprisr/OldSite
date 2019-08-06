@@ -1,39 +1,59 @@
-/* Reset */
-html, body, div, h1, h2, h3, img, .wrapper {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+.wrapper {
+  margin: 0;
+  -webkit-margin: 0;
+  padding: 0;
+  -webkit-padding: 0;
+  border: 0;
+  -webkit-border:0;
   font-size: 100%;
 }
 
-header, footer, menu, nav {
+header,
+footer,
+menu,
+{
   min-width: 100%;
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Main Style */
-html, body, {
+/* MAIN */
+html,
+body {
   height: 100%;
 }
 
 body {
   font-family: "Lato", sans-serif;
-  font-size: 12pt;
-  min-width: 1025px;
+  font-size: 1em;
   margin: 0 auto;
   text-align: center;
 }
 
 .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   min-height: 100%;
-  width: 100%;
+  min-width: 100%;
   position: absolute;
   padding-top: 80px;
-  padding-bottom: 170px;
+  padding-bottom: 275px;
 }
 
 header {
@@ -45,23 +65,64 @@ header {
   top: 0;
 }
 
-header nav {
+header .nav-mobile-wrapper {
+  display: none;
+}
+
+/* header .nav-wrapper.show {
+  display: block;
+} */
+
+header nav.mobile a {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+}
+
+header .nav-mobile-wrapper.show {
+  display: block;
+  min-width: 100vw;
+  height: 100vh;
+  padding: 20px 0;
+  background: rgba(32,41,69, 0.75);
+}
+
+.nav-desktop-wrapper {
   display: none;
 }
 
 h1 {
   font-weight: 300;
-  font-size: 36px;
+  letter-spacing: .5em;
+  line-height: 150%;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: .25em;
+  line-height: 150%;
 }
 
 h3 {
   font-weight: 500;
-  font-size: 20px;
+  letter-spacing: .125em;
+  line-height: 150%;
+}
+
+h4 {
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h5 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  letter-spacing: .25em;
+  line-height: 150%;
+}
+
+p {
+  line-height: 150%
 }
 
 a {
@@ -69,50 +130,65 @@ a {
   text-decoration: none;
 }
 
+section {
+  padding: 50px 20px;
+}
+
 button {
   background-color: white;
+  width: 250px;
+  height: 65px;
   border: none;
   color: black;
-  padding: 15px 50px;
-  font-size: 14px;
-  font-kerning: 2em;
+  font-size: .75em;
+  letter-spacing: .25em;
+  line-height: 120%;
   display: block;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px 20px 0 20px;
+  cursor: pointer;
 }
 
 .quote {
   font-family: "Playfair Display", serif;
-  font-size: 24px;
+  font-size: 1.125em;
   font-style: italic;
+  line-height: 150%;
+}
+
+.author {
+  font-size: .8em;
+  line-height: 150%;
+}
+
+/* HEADER */
+.head-elements {
+  height: 80px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .SD-logo {
-  padding-right: 50%;
   max-height: 48px;
+  padding: 20px 0;
+  float: left;
 }
 
 .fas.fa-bars.fa-2x{
   color: white;
-  padding-left: 50%;
+  padding: 24px 0;
+  float: right;
 }
 
-.he {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+/* HERO */
 #hero {
+  padding: 0;
   background:
     linear-gradient(
      rgba(32, 41, 69, 0.77),
      rgba(32, 41, 69, 0.77)
      ), url(../../img/annie-spratt-176628.jpg);
-  height: 100vh;
+  height: 645px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,7 +201,7 @@ button {
 #hero-content {
   position: relative;
   vertical-align: middle;
-  top: 15%;
+  top: 5%;
   color: white;
 }
 
@@ -133,21 +209,36 @@ button {
   display: inline-block;
 }
 
+/* WORK */
 #work {
   background: #BF4953;
   height: auto;
-  padding: 100px 0px;
+  width: 100%;
   color: white;
 }
 
 #work figure {
   display: inline-block;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+figcaption {
+  padding: 5px 0 18px 0;
 }
 
 #work img {
-  width: 348px;
+  max-width: 250px;
 }
 
+#work button {
+  display: block;
+  margin: 15px auto;
+}
+
+/* ABOUT */
 #about {
   background:
     linear-gradient(
@@ -155,10 +246,15 @@ button {
      rgba(220, 191, 165, 0.84)
      ), url(../../img/priscilla-du-preez-428495.jpg);
   height: auto;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0px;
+}
+
+#about p {
+  max-width: 520px;
+  margin: auto;
 }
 
 #about img {
@@ -166,16 +262,28 @@ button {
   padding: 10px;
 }
 
+.anchor{
+  display:block;
+  height:80px; /* this is the height of your header */
+  margin-top:-80px; /* this is again negative value of the height of your header */
+  visibility:hidden;
+}
+
 .palace {
-  max-height: 100px;
+  /* max-height: 100px; */
+  max-width: 175px;
 }
 
 .continental {
-  max-width: 300px;
+  /* max-height: 75px; */
+  max-width: 175px;
+
 }
 
 .bradley {
-  max-height: 50px;
+  /* max-height: 50px; */
+  max-width: 175px;
+  margin-bottom: 25px;
 }
 
 #about i {
@@ -184,32 +292,155 @@ button {
 }
 
 #about button {
-  margin-top: 48px;
+  margin: 48px auto 0 auto;
 }
 
 #about button i {
   padding: 0px;
 }
 
+/* FOOTER */
 footer {
   position: absolute;
-  height: 170px;
+  height: 275px;
   bottom: 0;
   width: 100%;
   background: #202945;
   color: white;
-  margin-top: -170px;
+  margin-top: -275px;
   clear: both;
 }
 
 footer li {
-  display: inline-block;
+  display: block;
+  font-size: 1.125em;
+  flex-wrap: wrap;
+  padding: 10px 0px;
 }
 
 #footer-content {
-  /* vertical-align: middle; */
-  position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
+  padding-top: 50px;
+}
+
+.copyright {
+  padding-top: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 451px) {
+  /* MAIN */
+  .wrapper {
+    padding-bottom: 170px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 170px;
+    margin-top: -170px;
+  }
+
+  footer li {
+    font-size: 1em;
+    display: inline-block;
+    margin: 10px 20px;
+  }
+
+  #footer-content {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 675px) {
+  /* MAIN */
+  h3 {
+    font-size: 1.4em;
+  }
+
+  .quote {
+    font-size: 1.2em;
+  }
+
+  .author {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 585px) and (max-width: 675px) {
+  /* WORK */
+  #work figure {
+    display: block;
+    margin: 20px auto;
+  }
+  #work button {
+    display: inline-block;
+    margin: 20px 15px 0px 15px;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  /* WORK */
+  #work .resume {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 676px) and (max-width: 760px) {
+  /* WORK */
+  #work {
+    order: 2;
+  }
+
+  /* ABOUT */
+  #about {
+    order: 1;
+  }
+}
+
+@media screen and (min-width:768px) {
+  /* MAIN */
+  .wrapper {
+    padding-top: 0;
+  }
+  #hero-content {
+    top: 17%;
+  }
+  .fas.fa-bars.fa-2x {
+    display: none;
+  }
+  header .nav-mobile-wrapper.show {
+    display: none;
+  }
+  header .nav-desktop-wrapper {
+    display: inline-block;
+    float: right;
+    padding: 33px 0;
+  }
+  header nav.desktop {
+    text-align: right;
+    padding: 0 ;
+  }
+  header nav.desktop a {
+    display: inline-block;
+    width: auto;
+    margin: 0 15px;
+}
+
+@media screen and (min-width:1250px) {
+  /* WORK */
+  #work figure {
+    width: 390px;
+  }
+
+  #work img {
+    max-width: 350px;
+    margin: 20px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* HEADER */
+  .head-elements {
+    width: 900px;
+  }
 }

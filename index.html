@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Seven Times Design</title>
     <meta charset="utf-8" />
@@ -13,28 +13,38 @@
     <div class="wrapper">
 
     <!-- HEADER -->
-    <header>
-      <a href="index.html"><img class="SD-logo he" src="img/7td-logo.png" alt="seven-times-logo"></a>
-      <i class="fas fa-bars fa-2x he"></i>
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">WORK</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header>
+        <div class="head-elements">
+          <a href="index.html"><img class="SD-logo" src="img/7td-logo.png" alt="seven-times-logo"></a>
+          <i class="fas fa-bars fa-2x" onClick="menuToggle()"></i>
+          <div class="nav-desktop-wrapper">
+            <nav class="desktop">
+              <a href="index.html">HOME</a>
+              <a href="#about-anchor">ABOUT</a>
+              <a href="portfolio.html">PORTFOLIO</a>
+              <!-- <a href="contact.html">CONTACT</a> -->
+            </nav>
+          </div>
+        </div>
+        <div class="nav-mobile-wrapper">
+          <nav class="mobile">
+            <a href="index.html">HOME</a>
+            <a href="#about-anchor">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <!-- <a href="contact.html">CONTACT</a> -->
+          </nav>
+        </div>
+      </header>
 
         <!-- HERO -->
         <section id="hero">
           <div id="hero-content">
             <img src="img/GM-Power-Mockup.png" alt="GM-Powertrain-Mockup">
-            <h1>FEATURED VIDEO</h1>
+            <h1>FEATURED PROJECT</h1>
             <h2>GM POWERTRAIN GREETER</h2>
-            <p class="quote">Continental Services<p>
-            <button type="button">VIEW VIDEO <i class="fas fa-angle-right"></i></button>
-            <button type="button">PORTFOLIO <i class="fas fa-angle-right"></i></button>
+            <h5>Continental Services</h5>
+            <button type="button" class="viewGMPower" onclick="viewGMPower()">VIEW VIDEO <i class="fas fa-angle-right"></i></button>
+            <button type="button" class="viewPortfolio" onclick="viewPortfolio()">PORTFOLIO <i class="fas fa-angle-right"></i></button>
           </div>
         </section>
 
@@ -42,50 +52,60 @@
         <section id="work">
           <h3>RECENT WORK</h3>
           <p class="divider">----</p>
-          <p class="quote">Creativity is allowing yourself to make mistakes. <br> Design is knowing which ones to keep.</p>
+          <p class="quote">Creativity is allowing yourself to make&nbsp;mistakes. <br> Design is knowing which ones to&nbsp;keep.</p>
           <p class="author">SCOTT ADAMS</p>
-          <figure>
+          <figure class="viewEdDining" onclick="viewEdDining()">
             <img src="img/Ed-Dining-520x400.jpg" alt="educational-dining-collateral">
               <figcaption>
                 <h4>EDUCATIONAL DINING</h4>
                 <p>CONTINENTAL SERVICES</p>
               </figcaption>
           </figure>
-          <figure>
+          <figure class="viewContClient" onClick="viewContClient()">
             <img src="img/Cont-Client-520x400.png" alt="continental-services-client-movie">
               <figcaption>
                 <h4>CLIENT MOVIE</h4>
                 <p>CONTINENTAL SERVICES</p>
               </figcaption>
           </figure>
-          <figure>
+          <figure class="viewAndrePort" onclick="viewAndrePort()">
             <img src="img/Andre-Port-520x400.png" alt="andre-portfolio-magazine">
               <figcaption>
                 <h4>PORTFOLIO MAGAZINE</h4>
                 <p>ANDRE MORTON</p>
               </figcaption>
           </figure>
-          <button type="button">VIEW MORE <i class="fas fa-angle-right"></i></button>
+          <button type="button" class="viewPortfolio" onclick="viewPortfolio()">VIEW MORE <i class="fas fa-angle-right"></i></button>
+          <a href="assets/EprisBurnettResume.pdf" download>
+            <button type="button" class="resume">RESUME <i class="fas fa-download"></i></button>
+          </a>
         </section>
 
         <!-- ABOUT -->
+        <span class="anchor" id="about-anchor"></span>
+
         <section id="about">
           <h3>ABOUT</h3>
           <p class="divider">----</p>
-          <p class="quote">The goal isn't to live forever. <br> The goal is to create something that will.</p>
+          <p class="quote">The goal isn't to live&nbsp;forever. <br> The goal is to create something that&nbsp;will.</p>
           <p class="author">CHUCK PALAHNIUK</p>
-          <p>VISUAL PROBLEM SOLVER <br> The most simplified description of what I do. It is my job to evoke the proper emotions resulting in a solution catered to your needs. </p>
-          <p>WHO I'VE WORKED FOR</p>
+          <br>
+          <h3>VISUAL PROBLEM SOLVER</h3>
+          <br>
+          <p>The most simplified description of what I do. It is my job to evoke the proper emotions resulting in a
+            solution catered to your needs. These needs can be, but are not limited to, increase in sales, raising awareness, providing entertainment, &c.</p>
+          <br>
+          <h3>WHO I'VE WORKED FOR</h3>
             <img src="img/palace-logo.png" alt="palace-logo" class="palace">
             <img src="img/continental-logo.png" alt="continental-logo" class="continental">
             <img src="img/bradley-logo.png" alt="bradley-logo" class="bradley">
-          <p>INTERESTS</p>
-            <i class="fas fa-basketball-ball fa-3x"></i>
-            <i class="fas fa-headphones fa-3x"></i>
-            <i class="fas fa-camera-retro fa-3x"></i>
-            <i class="fas fa-code fa-3x"></i>
-            <i class="fas fa-desktop fa-3x"></i>
-          <button type="button">RESUME <i class="fas fa-download"></i></button>
+          <h3>INTERESTS</h3>
+            <i class="fas fa-basketball-ball fa-2x"></i>
+            <i class="fas fa-headphones fa-2x"></i>
+            <i class="fas fa-camera-retro fa-2x"></i>
+            <i class="fas fa-code fa-2x"></i>
+            <i class="fas fa-desktop fa-2x"></i>
+          <button type="button" class="downloadResume" onclick="downloadResume()">RESUM&Eacute;<i class="fas fa-download"></i></button>
         </section>
 
     <!-- FOOTER -->
@@ -93,16 +113,18 @@
       <div id="footer-content">
         <nav>
           <ul>
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">WORK</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#about-anchor">ABOUT</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </nav>
-        <p>Seven Times Design // All Rights Reserved</p>
+        <p class="copyright">Seven Times Design // All Rights Reserved</p>
       </div>
     </footer>
 
     </div>
+
   </body>
+  <script type="text/javascript" src="assets/js/index.js"></script>
 </html>

@@ -1,0 +1,244 @@
+/* PORTFOLIO */
+
+div.wrapper h1 {
+    margin: 20px auto;
+}
+
+div.wrapper p {
+    margin: auto;
+    width: 100%;
+}
+
+section {
+    background: #202945;
+    color: white;
+}
+
+figure {
+    display: inline-block;
+    width: 305px;
+    height: 320px;
+    padding: 25px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        margin-top: 80px;
+    }
+}
+
+/* LIGHTBOX */
+
+#lightbox {
+    display: none;
+}
+
+.lightbox {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.project-slide.portrait {
+    height: 47%;
+}
+
+.project-info.portrait {
+    height: 53%;
+    bottom: 46px;
+}
+
+.project-slide {
+    position: fixed;
+    background: brown;
+    width: 100%;
+    height: 32%;
+    padding: 0;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.project-info {
+    position: absolute;
+    background:  rgba(220, 191, 165, 1);
+    width: 100%;
+    height: 68%;
+    left: 0;
+    bottom: 32px;
+    z-index: 2;
+}
+
+a.top {
+    color: white;
+    position: absolute;
+    bottom: 90px;
+    right: 30px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.project-container {
+    padding: 20px;
+}
+
+#title,
+#company,
+#caption-container {
+    text-align: left;
+    color: white;
+}
+
+#title {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+#company {
+    font-family: 'Playfair-Display', serif;
+    font-style: italic;
+}
+
+#caption-container {
+    margin-top: 20px;
+}
+
+#GMPower-Cap,
+#Balaboosta-Cap,
+#EdDining-Cap,
+#ContClient-Cap,
+#Lucca-Cap,
+#RiseofFall-Cap,
+#AndrePort-Cap {
+    display: none;
+}
+
+#GMPower-Cap.show,
+#Balaboosta-Cap.show,
+#EdDining-Cap.show,
+#ContClient-Cap.show,
+#Lucca-Cap.show,
+#RiseofFall-Cap.show,
+#AndrePort-Cap.show {
+    display: block;
+    overflow: scroll;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 3;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 375px) {
+    .project-info {
+        top: calc(43% - 80px);
+    }
+    .project-info.portrait {
+        height: 40%;
+        top: calc(58% - 80px);
+    }
+    
+}
+
+@media screen and (min-width: 411px) {
+    .project-info.portrait {
+        height: 33%;
+        top: calc(64% - 80px);
+    }
+
+}
+
+@media screen and (min-width: 451px) {
+    a.top {
+        bottom: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project-slide {
+        width: 60%;
+        height: 100%;
+        top: -80px;
+    }
+
+    .project-info {
+        width: 40%;
+        height: 100%;
+        left: 60%;
+        top: 0;
+    }
+    .project-info.portrait {
+        height: 100%;
+        top: 0;
+    }
+}

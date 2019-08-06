@@ -1,0 +1,33 @@
+section {
+    background: brown;
+    width:100%;
+    padding: 0;
+}
+
+aside {
+    background:  rgba(220, 191, 165, 1);
+    width: 100%;
+}
+
+a.top {
+    color: black;
+    position: absolute;
+    bottom: 300px;
+    right: 30px;
+}
+
+@media screen and (min-width: 451px) {
+    a.top {
+        bottom: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        width: 60%;
+    }
+
+    aside {
+        width: 40%;
+    }
+}
