@@ -77,7 +77,7 @@ function viewGMPower() {
 
     //Create video element
     let gmPower = document.createElement('VIDEO');
-    gmPower.src="../Site/img/projects/GMGreeter_1.mp4";
+    gmPower.src="../img/projects/GMGreeter_1.mp4";
     gmPower.style.width="100%";
     gmPower.style.height="auto";
     gmPower.autoplay=true;
@@ -94,7 +94,7 @@ function viewGMPower() {
 function viewBalaboosta() {
 
     let balaboosta = document.createElement('img');
-    balaboosta.src="../Site/img/projects/Balaboosta.png";
+    balaboosta.src="../img/projects/Balaboosta.png";
     balaboosta.style.width="100%";
     balaboosta.style.height="auto";
 
@@ -112,17 +112,17 @@ function viewBalaboosta() {
 function viewEdDining() {
 
     let edDiningBrochure = document.createElement('img');
-    edDiningBrochure.src="../Site/img/projects/ed-dining-brochure.png";
+    edDiningBrochure.src="../img/projects/ed-dining-brochure.png";
     edDiningBrochure.style.width="100%";
     edDiningBrochure.style.height="auto";
 
     let edDiningFolder = document.createElement('img');
-    edDiningFolder.src="../Site/img/projects/ed-dining-folder.png";
+    edDiningFolder.src="../img/projects/ed-dining-folder.png";
     edDiningFolder.style.width="100%";
     edDiningFolder.style.height="auto";
 
     let edDiningPOS = document.createElement('img');
-    edDiningPOS.src="../Site/img/projects/ed-dining-pos.png";
+    edDiningPOS.src="../img/projects/ed-dining-pos.png";
     edDiningPOS.style.width="100%";
     edDiningPOS.style.height="auto";
 
@@ -167,7 +167,7 @@ function viewLucca() {
 
     //Create video element
     let lucca = document.createElement('VIDEO');
-    lucca.src="../Site/img/projects/Lucca.mp4";
+    lucca.src="../img/projects/Lucca.mp4";
     lucca.style.width="100%";
     lucca.style.height="auto";
     lucca.autoplay=true;
@@ -184,7 +184,7 @@ function viewLucca() {
 function viewRiseofFall() {
 
     let riseofFall = document.createElement('img');
-    riseofFall.src="../Site/img/projects/rise-of-fall.png";
+    riseofFall.src="../img/projects/rise-of-fall.png";
     riseofFall.style.width="100%";
     riseofFall.style.height="auto";
 
@@ -202,32 +202,32 @@ function viewRiseofFall() {
 function viewAndrePortfolio() {
 
     let andrePort1 = document.createElement('img');
-    andrePort1.src="../Site/img/projects/USletter_04.jpg";
+    andrePort1.src="../img/projects/USletter_04.jpg";
     andrePort1.style.width="100%";
     andrePort1.style.height="auto";
 
     let andrePort2 = document.createElement('img');
-    andrePort2.src="../Site/img/projects/USletter_05.jpg";
+    andrePort2.src="../img/projects/USletter_05.jpg";
     andrePort2.style.width="100%";
     andrePort2.style.height="auto";
 
     let andrePort3 = document.createElement('img');
-    andrePort3.src="../Site/img/projects/USletter_07.jpg";
+    andrePort3.src="../img/projects/USletter_07.jpg";
     andrePort3.style.width="100%";
     andrePort3.style.height="auto";
 
     let andrePort4 = document.createElement('img');
-    andrePort4.src="../Site/img/projects/USletter_08.jpg";
+    andrePort4.src="../img/projects/USletter_08.jpg";
     andrePort4.style.width="100%";
     andrePort4.style.height="auto";
 
     let andrePort5 = document.createElement('img');
-    andrePort5.src="../Site/img/projects/USletter_10.jpg";
+    andrePort5.src="../img/projects/USletter_10.jpg";
     andrePort5.style.width="100%";
     andrePort5.style.height="auto";
 
     let andrePort6 = document.createElement('img');
-    andrePort6.src="../Site/img/projects/USletter_11.jpg";
+    andrePort6.src="../img/projects/USletter_11.jpg";
     andrePort6.style.width="100%";
     andrePort6.style.height="auto";
 
