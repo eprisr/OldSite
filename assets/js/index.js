@@ -12,19 +12,31 @@ function viewPortfolio() {
 //View Projects
 let projCards = document.getElementsByClassName("card");
 
-//Populate data based on which card was clicked
-console.log(projCards)
-projCards[0].addEventListener("click", viewGMPower);
-projCards[1].addEventListener("click", viewBalaboosta);
-projCards[2].addEventListener("click", viewEdDining);
-projCards[3].addEventListener("click", viewContClient);
-projCards[4].addEventListener("click", viewLucca);
-projCards[5].addEventListener("click", viewRiseofFall);
-projCards[6].addEventListener("click", viewAndrePortfolio);
+if (projCards.length > 0) {
+    //Populate data based on which card was clicked
+    projCards[0].addEventListener("click", viewGMPower);
+    projCards[1].addEventListener("click", viewBalaboosta);
+    projCards[2].addEventListener("click", viewEdDining);
+    projCards[3].addEventListener("click", viewContClient);
+    projCards[4].addEventListener("click", viewLucca);
+    projCards[5].addEventListener("click", viewRiseofFall);
+    projCards[6].addEventListener("click", viewAndrePortfolio);
+    
+    //All cards open lightbox
+    for (let card of projCards) {
+        card.addEventListener("click", openModal);
+    }
+}
 
-//All cards open lightbox
-for (let card of projCards) {
-    card.addEventListener("click", openModal);
+let featured = document.getElementsByClassName("featured");
+
+if (featured.length > 0) {
+    featured[0].addEventListener("click", viewEdDining);
+    featured[1].addEventListener("click", viewAndrePortfolio);
+    
+    for (let feature of featured) {
+        feature.addEventListener("click", openModal);
+    }
 }
 
 //GLobal variables
@@ -268,7 +280,6 @@ function removeChild() {
     while (currentProject[0].firstChild) {
         currentProject[0].removeChild(currentProject[0].firstChild);
     }
-    console.log(currentProject[0].childNodes);
 }
 
 //Toggles show on captions

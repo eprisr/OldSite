@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
@@ -12,7 +13,7 @@
     <!-- WRAPPER -->
     <div class="wrapper">
 
-    <!-- HEADER -->
+      <!-- HEADER -->
       <header>
         <div class="head-elements">
           <a href="index.html"><img class="SD-logo" src="img/7TD-logo.png" alt="seven-times-logo"></a>
@@ -36,92 +37,129 @@
         </div>
       </header>
 
-        <!-- HERO -->
-        <section id="hero">
-          <div id="hero-content">
-            <img src="img/GM-Power-Mockup.png" alt="GM-Powertrain-Mockup">
-            <h1>FEATURED PROJECT</h1>
-            <h2>GM POWERTRAIN GREETER</h2>
-            <h5>Continental Services</h5>
-            <button type="button" class="viewGMPower" onclick="viewGMPower()">VIEW VIDEO <i class="fas fa-angle-right"></i></button>
-            <button type="button" class="viewPortfolio" onclick="viewPortfolio()">PORTFOLIO <i class="fas fa-angle-right"></i></button>
-          </div>
-        </section>
+      <!-- HERO -->
+      <section id="hero">
+        <div id="hero-content">
+          <img src="img/GM-Power-Mockup.png" alt="GM-Powertrain-Mockup">
+          <h1>FEATURED PROJECT</h1>
+          <h2>GM POWERTRAIN GREETER</h2>
+          <h5>Continental Services</h5>
+          <button type="button" class="viewGMPower" onclick="viewGMPower()">VIEW VIDEO <i class="fas fa-angle-right"></i></button>
+          <button type="button" class="viewPortfolio" onclick="viewPortfolio()">PORTFOLIO <i class="fas fa-angle-right"></i></button>
+        </div>
+      </section>
 
-        <!-- WORK -->
-        <section id="work">
-          <h3>RECENT WORK</h3>
-          <p class="divider">----</p>
-          <p class="quote">Creativity is allowing yourself to make&nbsp;mistakes. <br> Design is knowing which ones to&nbsp;keep.</p>
-          <p class="author">SCOTT ADAMS</p>
-          <figure class="viewEdDining" onclick="viewEdDining()">
-            <img src="img/Ed-Dining-520x400.jpg" alt="educational-dining-collateral">
-              <figcaption>
-                <h4>EDUCATIONAL DINING</h4>
-                <p>CONTINENTAL SERVICES</p>
-              </figcaption>
-          </figure>
-          <figure class="viewContClient" onClick="viewContClient()">
-            <img src="img/Cont-Client-520x400.png" alt="continental-services-client-movie">
-              <figcaption>
-                <h4>CLIENT MOVIE</h4>
-                <p>CONTINENTAL SERVICES</p>
-              </figcaption>
-          </figure>
-          <figure class="viewAndrePort" onclick="viewAndrePort()">
-            <img src="img/Andre-Port-520x400.png" alt="andre-portfolio-magazine">
-              <figcaption>
-                <h4>PORTFOLIO MAGAZINE</h4>
-                <p>ANDRE MORTON</p>
-              </figcaption>
-          </figure>
-          <button type="button" class="viewPortfolio" onclick="viewPortfolio()">VIEW MORE <i class="fas fa-angle-right"></i></button>
-          <a href="assets/EprisBurnettResume.pdf" download>
-            <button type="button" class="resume">RESUME <i class="fas fa-download"></i></button>
-          </a>
-        </section>
+      <!-- WORK -->
+      <section id="work">
+        <h3>RECENT WORK</h3>
+        <p class="divider">----</p>
+        <p class="quote">Creativity is allowing yourself to make&nbsp;mistakes. <br> Design is knowing which ones to&nbsp;keep.</p>
+        <p class="author">SCOTT ADAMS</p>
+        <figure class="viewEdDining featured">
+          <img src="img/Ed-Dining-520x400.jpg" alt="educational-dining-collateral">
+            <figcaption>
+              <h4>EDUCATIONAL DINING</h4>
+              <p>CONTINENTAL SERVICES</p>
+            </figcaption>
+        </figure>
+        <figure class="viewContClient" onclick="viewContClient()">
+          <img src="img/Cont-Client-520x400.png" alt="continental-services-client-movie">
+            <figcaption>
+              <h4>CLIENT MOVIE</h4>
+              <p>CONTINENTAL SERVICES</p>
+            </figcaption>
+        </figure>
+        <figure class="viewAndrePort featured">
+          <img src="img/Andre-Port-520x400.png" alt="andre-portfolio-magazine">
+            <figcaption>
+              <h4>PORTFOLIO MAGAZINE</h4>
+              <p>ANDRE MORTON</p>
+            </figcaption>
+        </figure>
+        <button type="button" class="viewPortfolio" onclick="viewPortfolio()">VIEW MORE <i class="fas fa-angle-right"></i></button>
+        <a href="assets/EprisBurnettResume.pdf" download>
+          <button type="button" class="resume">RESUME <i class="fas fa-download"></i></button>
+        </a>
+      </section>
 
-        <!-- ABOUT -->
-        <span class="anchor" id="about-anchor"></span>
+      <!-- ABOUT -->
+      <span class="anchor" id="about-anchor"></span>
 
-        <section id="about">
-          <h3>ABOUT</h3>
-          <p class="divider">----</p>
-          <p class="quote">The goal isn't to live&nbsp;forever. <br> The goal is to create something that&nbsp;will.</p>
-          <p class="author">CHUCK PALAHNIUK</p>
-          <br>
-          <h3>VISUAL PROBLEM SOLVER</h3>
-          <br>
-          <p>The most simplified description of what I do. It is my job to evoke the proper emotions resulting in a
-            solution catered to your needs. These needs can be, but are not limited to, increase in sales, raising awareness, providing entertainment, &c.</p>
-          <br>
-          <h3>WHO I'VE WORKED FOR</h3>
-            <img src="img/palace-logo.png" alt="palace-logo" class="palace">
-            <img src="img/continental-logo.png" alt="continental-logo" class="continental">
-            <img src="img/bradley-logo.png" alt="bradley-logo" class="bradley">
-          <h3>INTERESTS</h3>
-            <i class="fas fa-basketball-ball fa-2x"></i>
-            <i class="fas fa-headphones fa-2x"></i>
-            <i class="fas fa-camera-retro fa-2x"></i>
-            <i class="fas fa-code fa-2x"></i>
-            <i class="fas fa-desktop fa-2x"></i>
-          <button type="button" class="downloadResume" onclick="downloadResume()">RESUM&Eacute;<i class="fas fa-download"></i></button>
-        </section>
+      <section id="about">
+        <h3>ABOUT</h3>
+        <p class="divider">----</p>
+        <p class="quote">The goal isn't to live&nbsp;forever. <br> The goal is to create something that&nbsp;will.</p>
+        <p class="author">CHUCK PALAHNIUK</p>
+        <br>
+        <h3>VISUAL PROBLEM SOLVER</h3>
+        <br>
+        <p>The most simplified description of what I do. It is my job to evoke the proper emotions resulting in a
+          solution catered to your needs. These needs can be, but are not limited to, increase in sales, raising awareness, providing entertainment, &c.</p>
+        <br>
+        <h3>WHO I'VE WORKED FOR</h3>
+          <img src="img/palace-logo.png" alt="palace-logo" class="palace">
+          <img src="img/continental-logo.png" alt="continental-logo" class="continental">
+          <img src="img/bradley-logo.png" alt="bradley-logo" class="bradley">
+        <h3>INTERESTS</h3>
+          <i class="fas fa-basketball-ball fa-2x"></i>
+          <i class="fas fa-headphones fa-2x"></i>
+          <i class="fas fa-camera-retro fa-2x"></i>
+          <i class="fas fa-code fa-2x"></i>
+          <i class="fas fa-desktop fa-2x"></i>
+        <button type="button" class="downloadResume" onclick="downloadResume()">RESUM&Eacute;<i class="fas fa-download"></i></button>
+      </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <div id="footer-content">
-        <nav>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#about-anchor">ABOUT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
-        <p class="copyright">Seven Times Design // All Rights Reserved</p>
+      <!--LIGHTBOX-->
+      <div id="lightbox" class="lightbox">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <section class="project-slide">
+
+          </section>
+          <aside class="project-info">
+              <div class="project-container">
+                  <h2 id="title"></h2>
+                  <p id="company"></p>
+                  <div id="caption-container">
+                      <p id="GMPower-Cap" class="caption">With outdated menu boards it became tough to sell higher priced items. A greeter video was created to display promotions and bring awareness to other cafe options within the GM Powertrain dining area.
+
+                      By promoting combos and new items, sales increased. The installment of a new greeter board allowed employees to be able to see specials for the day while passing by, cutting the time it took to make a choice as to what they wanted.</p>
+                      
+                      <p id="Balaboosta-Cap" class="caption">A point-of-sales  sheet was created to promote a new Mediterranean station. The imagery was taken from the concept of the GM Greeter video in order to keep consistency throughout the brand.</p>
+                      
+                      <p id="EdDining-Cap" class="caption">The Educational Dining department had just had its logo redone, but none of the current branding matched. It was my mission to make new collateral pieces that catered not only to the liking of elementary staff, but high school faculty and staff as well.
+
+                      To reflect the company's view of healthy eating habits, appetizing and refreshing colors were chosen. By presenting a fresh, new  brand loaded with compelling information Continental Services was able to obtain new clients and increase revenue.</p>
+                      
+                      <p id="ContClient-Cap" class="caption">An informative video simply showcasing the many brands of Continental Services . This is one of my favorite projects. With a turn around time of 3 days, it was also proven to be the most difficult.</p>
+                      
+                      <p id="Lucca-Cap" class="caption">The photos provided are absolutely stunning. How does one effectively promote a new food station and keep the focus on the appetizing photos? Kinetic type of course! The idea was to allow the type to guide the eye through the photo instead of it interfering with the photo; working together, not clashing.</p>
+                      
+                      <p id="RiseofFall-Cap" class="caption">The Rise of Fall Pasta promotion was geared towards preparing customers to endulge in pasta dishes for the fall.
+
+                      What's better than a subtle, delicious, food war?</p>
+                      
+                      <p id="AndrePort-Cap" class="caption">I enjoy typography and editorial design. This project gave me an opportunity to work under direction and develop layout skills. I was also allowed to direct some photo sessions and conduct an interview.</p>
+                      
+                      <!-- <a href="#top" class="top">Back to Top</a> -->
+                  </div>
+              </div>
+          </aside>
       </div>
-    </footer>
+
+      <!-- FOOTER -->
+      <footer>
+        <div id="footer-content">
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="index.html#about-anchor">ABOUT</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <p class="copyright">Seven Times Design // All Rights Reserved</p>
+        </div>
+      </footer>
 
     </div>
 

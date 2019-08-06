@@ -1,37 +1,48 @@
 /* PORTFOLIO */
 
-div.wrapper h1 {
+#portfolio.h1 {
     margin: 20px auto;
 }
 
-div.wrapper p {
+#portfolio.p, #Lightbox.p {
     margin: auto;
     width: 100%;
 }
 
-section {
+#portfolio {
     background: #202945;
     color: white;
 }
 
-figure {
+.viewMemGame,
+.viewNeighMaps,
+.viewMyReads,
+.card {
     display: inline-block;
     width: 305px;
     height: 320px;
     padding: 25px 0;
 }
 
-figure img {
+.viewMemGame img,
+.viewNeighMaps img,
+.viewMyReads img,
+.card img {
     max-width: 100%;
     height: auto;
 }
 
-figure:hover {
+.viewMemGame:hover,
+.viewNeighMaps:hover,
+.viewMyReads:hover,
+.card:hover,
+.viewContClient:hover,
+.features:hover {
     cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-    section {
+    #portfolio {
         margin-top: 80px;
     }
 }
@@ -50,8 +61,7 @@ figure:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: black;
+    background-color: #202945;
 }
 
 .project-slide.portrait {
@@ -65,7 +75,7 @@ figure:hover {
 
 .project-slide {
     position: fixed;
-    background: brown;
+    /* background: brown; */
     width: 100%;
     height: 32%;
     padding: 0;
@@ -76,7 +86,7 @@ figure:hover {
 
 .project-info {
     position: absolute;
-    background:  rgba(220, 191, 165, 1);
+    /* background:  rgba(220, 191, 165, 1); */
     width: 100%;
     height: 68%;
     left: 0;
@@ -126,6 +136,10 @@ a.top {
     margin-top: 20px;
 }
 
+#caption-container p {
+    overflow: hidden;
+}
+
 #GMPower-Cap,
 #Balaboosta-Cap,
 #EdDining-Cap,
@@ -144,7 +158,6 @@ a.top {
 #RiseofFall-Cap.show,
 #AndrePort-Cap.show {
     display: block;
-    overflow: scroll;
 }
 
 .mySlides {
@@ -201,19 +214,22 @@ a.top {
 
 @media screen and (min-width: 375px) {
     .project-info {
-        top: calc(43% - 80px);
+        top: calc(37% - 80px);
     }
     .project-info.portrait {
         height: 40%;
-        top: calc(58% - 80px);
+        top: calc(50% - 80px);
     }
     
 }
 
 @media screen and (min-width: 411px) {
+    .project-info {
+        top: calc(37% - 80px);
+    }
     .project-info.portrait {
         height: 33%;
-        top: calc(64% - 80px);
+        top: calc(51% - 80px);
     }
 
 }
