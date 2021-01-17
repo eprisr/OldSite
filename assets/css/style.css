@@ -195,7 +195,7 @@ button {
 }
 
 #hero img {
-  width: 350px;
+  max-width: 350px;
 }
 
 #hero-content {

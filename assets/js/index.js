@@ -31,13 +31,12 @@ if (projCards.length > 0) {
 let featured = document.getElementsByClassName("featured");
 
 if (featured.length > 0) {
-    featured[0].addEventListener("click", viewGMPower);
+    featured[0].addEventListener("click", viewMemGame);
     featured[1].addEventListener("click", viewEdDining);
     featured[2].addEventListener("click", viewAndrePortfolio);
-    
-    for (let feature of featured) {
-        feature.addEventListener("click", openModal);
-    }
+
+		featured[1].addEventListener("click", viewEdDining);
+    featured[2].addEventListener("click", viewAndrePortfolio);
 }
 
 //GLobal variables
