@@ -17,6 +17,7 @@
 .viewMemGame,
 .viewNeighMaps,
 .viewMyReads,
+.sosweet,
 .card {
     display: inline-block;
     width: 305px;
@@ -27,6 +28,7 @@
 .viewMemGame img,
 .viewNeighMaps img,
 .viewMyReads img,
+.sosweet img,
 .card img {
     max-width: 100%;
     height: auto;
