@@ -9,12 +9,9 @@ p,
 img,
 .wrapper {
   margin: 0;
-  -webkit-margin: 0;
   padding: 0;
-  -webkit-padding: 0;
   border: 0;
-  -webkit-border:0;
-  font-size: 100%;
+  font-size: 16px;
 }
 
 header,
@@ -68,10 +65,6 @@ header {
 header .nav-mobile-wrapper {
   display: none;
 }
-
-/* header .nav-wrapper.show {
-  display: block;
-} */
 
 header nav.mobile a {
   display: block;
